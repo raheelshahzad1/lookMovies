@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookMovies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Poppins"', "sans-serif"],
+                        helvetica: ["Montserrat", "sans-serif"],
+                    },
+                    boxShadow: {
+                        "plans": "0px 0px 16px #FFD800CC"
+                    },
+                    backgroundImage: {
+                        hero: "url('./assets/images/comet-bg.png')",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <header class="bg-[#102132]">
+        <div class="max-w-[1440px] mx-auto gap-16 flex items-center justify-between py-4">
+            <div class="flex gap-8 items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-1">
+                    <img src="./assets/images/logo.webp" class="max-w-[120px]" alt="">
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex flex-col gap-2 text-sm font-semibold">
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="text-lime-400 border-b-2 border-lime-400">MOVIES</a>
+                        <a href="#" class="text-gray-400 hover:text-white">TV SHOWS</a>
+                    </div>
+                    <div class="flex gap-4 text-gray-400">
+                        <a href="#" class="hover:text-white">FILTER</a>
+                        <a href="#" class="hover:text-white">LATEST</a>
+                        <a href="#" class="hover:text-white">CATEGORIES</a>
+                        <a href="#" class="hover:text-white">GENRES</a>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Search and Auth -->
+            <div class="flex items-center gap-6 grow">
+                <div
+                    class="grow flex items-center bg-[#1b2a38] border-4 border-[#020d18] rounded-full px-4 py-4 w-[300px]">
+                    <svg class="w-6 h-6 text-gray-400 mr-2" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                    <input type="text" placeholder="Search for a Movie or TV Show"
+                        class="bg-transparent outline-none w-full text-sm text-gray-200 placeholder-gray-400" />
+                </div>
+
+                <button
+                    class="border-2 border-gray-400 px-4 py-1 rounded-full text-sm hover:bg-gray-700 text-gray-400 font-semibold ">LOGIN</button>
+                <button
+                    class="border-2 border-gray-400 px-4 py-1 rounded-full text-sm hover:bg-gray-700 text-gray-400 font-semibold">SIGNUP</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-[#020D18]">
+        <div class="max-w-[1440px] mx-auto pt-4">
+            <div class="flex items-center justify-between mb-4">
+                <button
+                    class="flex items-center text-white gap-2 font-Poppins font-medium bg-[#102132] text-[20px] h-[56px] px-4 rounded-[6px]">
+                    <img src="assets/icons/arrow-back.svg" alt="">
+                    <span>Night of the Comet</span>
+                </button>
+
+                <div class="flex items-center gap-[10px]">
+                    <p class="text-white text-lg font-Poppins font-normal">
+                        Loading <span class="font-bold">Night of the Comet,</span> in...
+                    </p>
+                    <p
+                        class="flex items-center justify-center bg-[#969ca4] w-11 h-11 rounded-full border-1 border-[#FFFFFF33] text-[28px] font-Montserrat font-bold text-[#020D18]">
+                        8<span class="text-[20px] font-normal inline-block -mb-2">s</span>
+                    </p>
+                </div>
+
+                <button>
+                    <img src="assets/icons/close-circle.svg" alt="">
+                </button>
+            </div>
+
+            <div class="max-w-[743px] mx-auto text-center">
+                <h1 class="text-5xl capitalize font-Poppins font-semibold text-white leading-[65px] mb-6">
+                    Get <span class="text-[#39FF7E]">Premium</span> Membership
+                </h1>
+
+                <p class="font-Poppins font-regular text-white text-2xl mb-10">
+                    With our <span class="font-bold">Premium Plans</span>, you get more of everything you love. More
+                    movies, <span class="font-bold">more features</span>, and more
+                    freedom.
+                </p>
+
+                <button
+                    class="text-[#020D18] text-[20px] font-Poppins font-bold h-[56px] min-w-[336px] uppercase bg-gradient-to-l from-[#39FF7E] to-[#00C636] border border-white rounded-[10px] shadow-plans">
+                    CONSIDER OUR PLANS
+                </button>
+            </div>
+
+            <div class="flex items-center flex-wrap gap-7 pt-[400px] pb-12 bg-hero bg-no-repeat bg-center bg-cover -mt-20">
+                <div
+                    class="flex items-center gap-[34px] cursor-pointer bg-[#39FF7E99]/[30%] h-[57px] px-5 backdrop-blur-[6px] rounded-[8px] border border-[#FFFFFF52] text-2xl capitalize text-white">
+                    <p class="text-2xl text-white font-Poppins font-semibold italic">Watch Full HD</p>
+                    <img src="assets/icons/HD.svg" alt="">
+                </div>
+
+                <div
+                    class="flex items-center gap-[34px] cursor-pointer bg-[#DCF64BCC]/[30%] h-[57px] px-5 backdrop-blur-[6px] rounded-[8px] border border-[#FFFFFF52] text-2xl capitalize text-white">
+                    <p class="text-2xl text-white font-Poppins font-semibold italic">Download Directly</p>
+                    <img src="assets/icons/donwload.svg" alt="">
+                </div>
+
+                <div
+                    class="flex items-center gap-[34px] cursor-pointer bg-[#00D8FFCC]/[30%] h-[57px] px-5 backdrop-blur-[6px] rounded-[8px] border border-[#FFFFFF52] text-2xl capitalize text-white">
+                    <p class="text-2xl text-white font-Poppins font-semibold italic">Watch without Ads</p>
+                    <img src="assets/icons/without-ads.svg" alt="">
+                </div>
+
+                <div
+                    class="flex items-center gap-[34px] cursor-pointer bg-[#FF4860B3]/[30%] h-[57px] px-5 backdrop-blur-[6px] rounded-[8px] border border-[#FFFFFF52] text-2xl capitalize text-white">
+                    <p class="text-2xl text-white font-Poppins font-semibold italic">Request Content</p>
+                    <img src="assets/icons/request-content.svg" alt="">
+                </div>
+
+                <div
+                    class="flex items-center gap-[34px] cursor-pointer bg-[#8A95FCCC]/[30%] h-[57px] px-5 backdrop-blur-[6px] rounded-[8px] border border-[#FFFFFF52] text-2xl capitalize text-white">
+                    <p class="text-2xl text-white font-Poppins font-semibold italic">Access Watch History</p>
+                    <img src="assets/icons/history.svg" alt="">
+                </div>
+
+                <div
+                    class="flex items-center gap-[34px] cursor-pointer bg-[#FF7248CC]/[30%] h-[57px] px-5 backdrop-blur-[6px] rounded-[8px] border border-[#FFFFFF52] text-2xl capitalize text-white">
+                    <p class="text-2xl text-white font-Poppins font-semibold italic">Unlimited watching</p>
+                    <img src="assets/icons/devices.svg" alt="">
+                </div>
+
+                <div
+                    class="flex items-center gap-[34px] cursor-pointer bg-[#DCF64BCC]/[30%] h-[57px] px-5 backdrop-blur-[6px] rounded-[8px] border border-[#FFFFFF52] text-2xl capitalize text-white">
+                    <p class="text-2xl text-white font-Poppins font-semibold italic">Unlimited watching</p>
+                    <img src="assets/icons/unlimited.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
