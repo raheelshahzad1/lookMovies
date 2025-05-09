@@ -1,0 +1,36 @@
+@media (min-width: 295px) and (max-width: 400px) {
+    .plans p {
+        font-size: 14px;
+    }
+
+    .plans {
+        padding: 10px !important;
+    }
+
+    .plans img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .get-heading {
+        font-size: 18px !important;
+    }
+
+    .bact-btn {
+        font-size: 14px !important;
+        height: 40px !important;
+    }
+
+    .bact-btn img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .loading {
+        font-size: 12px !important;
+    }
+
+    .bg-image {
+        margin-bottom: -100px!important;
+    }
+}
