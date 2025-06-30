@@ -1,10 +1,6 @@
-@media (min-width: 295px) and (max-width: 400px) {
+@media (min-width: 295px) and (max-width: 375px) {
     .plans p {
         font-size: 14px;
-    }
-
-    .plans {
-        padding: 10px !important;
     }
 
     .plans img {
@@ -12,25 +8,63 @@
         width: 25px;
     }
 
-    .get-heading {
-        font-size: 18px !important;
-    }
-
     .bact-btn {
         font-size: 14px !important;
         height: 40px !important;
+        padding-left: 0 !important;
     }
 
     .bact-btn img {
-        height: 15px;
-        width: 15px;
+        height: 14px;
+        width: 14px;
     }
 
     .loading {
         font-size: 12px !important;
     }
 
-    .bg-image {
-        margin-bottom: -100px!important;
+    .timer-box {
+        padding: 15px !important;
+    }
+
+    .timer-box h1 {
+        font-size: 20px !important;
+        line-height: 28px !important;
+    }
+
+    .timer-box p {
+        font-size: 13px !important;
+    }
+
+    .feature-icon {
+        height: 35px !important;
+        width: 35px !important;
+    }
+
+    .feature-icon img {
+        height: 18px !important;
+        width: 18px !important;
+    }
+
+    .timer-box .timer {
+        width: 25px !important;
+        height: 25px !important;
+        font-size: 14px !important;
+    }
+
+    .timer-box .collon {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .timer-box .timer {
+        width: 38px;
+        height: 38px;
+        font-size: 26px;
+    }
+
+    .timer-box .collon {
+        font-size: 20px;
     }
 }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookMovies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Poppins"', "sans-serif"],
+                        helvetica: ["Montserrat", "sans-serif"],
+                    },
+                    boxShadow: {
+                        "plans": "0px 0px 22px #FF930F"
+                    },
+                    backgroundImage: {
+                        premium: "url('./assets/images/premium-bg.png')",
+                        premiumMobile: "url('assets/images/mobile-premium-bg.png')"
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <section class="bg-[#020D18]">
+        <div class="max-w-[1440px] mx-auto px-5 xl:px-10">
+            <div
+                class="relative bg-premiumMobile md:bg-premium pt-5 md:pb-10  sm:bg-hero bg-no-repeat sm:bg-center bg-cover">
+                <div
+                    class="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#020D18] to-transparent">
+                </div>
+
+                <div class="flex max-lg:flex-col lg:items-center justify-between relative gap-5 pb-[34px] pe-5">
+                    <div>
+                        <button
+                            class="bact-btn flex items-center text-white gap-2 font-Poppins font-medium bg-[#102132]/[20%]  sm:bg-[#102132]/[60%] text-lg md:text-[20px] h-[56px] px-4 rounded-[6px]">
+                            <img src="assets/icons/arrow-back.svg" alt="">
+                            <span>Night of the Comet</span>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-[10px] justify-center">
+                        <p class="loading text-white text-sm md:text-lg font-Poppins font-normal">
+                            Loading <span class="font-bold">Night of the Comet,</span> in...
+                        </p>
+                        <p
+                            class="flex items-center justify-center bg-[#FFFFFFCC]/[50%] w-8 h-8 md:w-11 md:h-11 rounded-full border-1 border-[#FFFFFF33] text-lg md:text-[28px] font-Montserrat font-bold text-[#020D18] backdrop-blur-[1px]">
+                            8<span class="text-sm md:text-[20px] font-normal inline-block -mb-1">s</span>
+                        </p>
+                    </div>
+
+                    <button class="max-lg:absolute right-3 -top-1">
+                        <img src="assets/icons/close-circle.svg" class="max-sm:h-6 max-sm:w-6" alt="">
+                    </button>
+                </div>
+
+                <div
+                    class="membership-box max-sm:text-center mt-[310px] sm:mt-[250px] md:mt-0 md:absolute bottom-0 left-0 w-full md:max-w-[360px] lg:max-w-[443px] w-full bg-[#000000]/[31%] backdrop-blur-[8px] md:rounded-tr-[20px] border border-[#FFFFFF8F] py-7 lg:py-10 px-5 lg:px-8">
+                    <button class="hidden md:block absolute top-3 right-3">
+                        <img src="assets/icons/arrow-top-right.svg" alt="">
+                    </button>
+
+                    <h1 class="text-3xl lg:text-5xl lg:leading-[64px] text-white font-Poppins font-medium mb-5">
+                        Get <span class="text-[#FFD800]">Premium</span> Membership
+                    </h1>
+
+                    <p class="text-md lg:text-lg font-Poppins leading-[27px] mb-5 sm:mb-8 md:mb-10 text-white">
+                        With our <span class="font-bold">Premium Plans</span>, you get more of everything you love. More
+                        movies, <span class="font-bold">more features</span>, and
+                        more freedom.
+                    </p>
+
+                    <div class="flex max-md:justify-center">
+                        <button
+                            class="mb-[30px] md:mb-0 relative z-20 text-[#020D18] text-sm md:text-[20px] font-Poppins font-medium h-[36px] md:h-[56px] w-[238px]  md:min-w-[320px] uppercase bg-gradient-to-l from-[#FF930F] to-[#FFF95B] border border-white rounded-[10px] shadow-plans">
+                            Check Our Plans
+                        </button>
+                    </div>
+
+                    <div class="md:hidden features">
+                        <div
+                            class="flex items-center gap-5 justify-between cursor-pointer plans capitalize text-white mb-5">
+                            <p class="text-[20px] text-white font-Poppins font-semibold italic">
+                                Watch
+                                Full HD
+                            </p>
+                            <div
+                                class="feature-icon flex items-center justify-center h-10 w-10 rounded-full bg-[#FCC3DC]">
+                                <img src="assets/icons/hd-black.svg" class="h-6 w-6" alt="">
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-5 justify-between cursor-pointer plans capitalize text-white mb-5">
+                            <p class="text-[20px] text-white font-Poppins font-semibold italic">
+                                Download Directly
+                            </p>
+                            <div
+                                class="feature-icon flex items-center justify-center h-10 w-10 rounded-full bg-[#c3dbfc]">
+                                <img src="assets/icons/download-black.svg" class="h-5 w-5" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-5 justify-between cursor-pointer plans capitalize text-white">
+                            <p class="text-[20px] text-white font-Poppins font-semibold italic">
+                                Watch without Ads
+                            </p>
+                            <div
+                                class="feature-icon flex items-center justify-center h-10 w-10 rounded-full bg-[#c3fcd0]">
+                                <img src="assets/icons/ads-black.svg" class="h-6 w-6" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex justify-end">
+                    <div class="flex flex-col pr-8 lg:pr-10 max-w-[350px] lg:max-w-[431px] w-full gap-[62px]">
+                        <div
+                            class="flex items-center gap-5 justify-between cursor-pointer bg-[#000000]/[31%] w-[280px] lg:w-[328px] max-sm:w-full py-4 plans px-5 backdrop-blur-[8px] rounded-[8px] border border-[#FFFFFF8F] text-2xl capitalize text-white">
+                            <p
+                                class="text-lg sm:text-lg lg:text-xl xl:text-2xl text-white font-Poppins font-semibold italic">
+                                Watch <br>
+                                Full HD
+                            </p>
+                            <div
+                                class="flex items-center justify-center h-[50px] w-[50px] lg:h-[71px] lg:w-[71px] rounded-full bg-[#FCC3DC]">
+                                <img src="assets/icons/hd-black.svg" class="h-6 w-6 lg:h-10 lg:w-10" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <div
+                                class="flex items-center gap-5 justify-between cursor-pointer bg-[#000000]/[31%] w-[280px] lg:w-[328px] max-sm:w-full py-4 plans px-5 backdrop-blur-[8px] rounded-[8px] border border-[#FFFFFF8F] text-2xl capitalize text-white">
+                                <p
+                                    class="text-lg sm:text-lg lg:text-xl xl:text-2xl text-white font-Poppins font-semibold italic">
+                                    Download <br>
+                                    Directly
+                                </p>
+                                <div
+                                    class="flex items-center justify-center h-[50px] w-[50px] lg:h-[71px] lg:w-[71px] rounded-full bg-[#c3dbfc]">
+                                    <img src="assets/icons/download-black.svg" class="w-6 lg:h-10 lg:w-10" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-5 justify-between cursor-pointer bg-[#000000]/[31%] w-[280px] lg:w-[328px] max-sm:w-full py-4 plans px-5 backdrop-blur-[8px] rounded-[8px] border border-[#FFFFFF8F] text-2xl capitalize text-white">
+                            <p
+                                class="text-lg sm:text-lg lg:text-xl xl:text-2xl text-white font-Poppins font-semibold italic">
+                                Watch <br>
+                                Without Ads
+                            </p>
+                            <div
+                                class="flex items-center justify-center h-[50px] w-[50px] lg:h-[71px] lg:w-[71px] rounded-full bg-[#c3fcd0]">
+                                <img src="assets/icons/hd-black.svg" class="h-6 w-6 lg:h-10 lg:w-10" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <div
+                                class="flex items-center gap-5 justify-between cursor-pointer bg-[#000000]/[31%] w-[280px] lg:w-[328px] max-sm:w-full py-4 plans px-5 backdrop-blur-[8px] rounded-[8px] border border-[#FFFFFF8F] text-2xl capitalize text-white">
+                                <p
+                                    class="text-lg sm:text-lg lg:text-xl xl:text-2xl text-white font-Poppins font-semibold italic">
+                                    Request <br>
+                                    Content
+                                </p>
+                                <div
+                                    class="flex items-center justify-center h-[50px] w-[50px] lg:h-[71px] lg:w-[71px] rounded-full bg-[#fcfcc3]">
+                                    <img src="assets/icons/hd-black.svg" class="h-6 w-6 lg:h-10 lg:w-10" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

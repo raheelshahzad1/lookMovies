@@ -1,0 +1,825 @@
+﻿<!DOCTYPE html>
+
+<head id="head1" runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+    <title>Vermont Small Business Development Center</title>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <!-- custom css -->
+    <style type="text/css">
+        .main-color-1,
+        .main-color-1-hover:hover,
+        a:hover,
+        a:focus,
+        header .multi-column>.dropdown-menu>li>a:hover,
+        header .multi-column>.dropdown-menu .menu-column>li>a:hover,
+        #main-nav.nav-style-2 .navbar-nav>li:hover>a,
+        #main-nav.nav-style-2 .navbar-nav>.current-menu-item>a,
+        #main-nav.nav-style-3 .navbar-nav>li:hover>a,
+        #main-nav.nav-style-3 .navbar-nav>.current-menu-item>a,
+        .item-meta a:not(.btn):hover,
+        .map-link.small-text,
+        .single-u_event .event-info .cat-link:hover,
+        .single-course-detail .cat-link:hover,
+        .related-event .ev-title a:hover,
+        #checkout-uni li.active a,
+        .wpb_wrapper .wpb_content_element .wpb_tabs_nav li.ui-tabs-active,
+        .wpb_wrapper .wpb_content_element .wpb_tabs_nav li:hover,
+        .wpb_wrapper .wpb_content_element .wpb_tabs_nav li.ui-tabs-active a,
+        .wpb_wrapper .wpb_content_element .wpb_tabs_nav li:hover a,
+        li.bbp-topic-title .bbp-topic-permalink:hover,
+        #bbpress-forums li.bbp-body ul.topic .bbp-topic-title:hover a,
+        #bbpress-forums li.bbp-body ul.forum .bbp-forum-info:hover .bbp-forum-title,
+        #bbpress-forums li.bbp-body ul.topic .bbp-topic-title:hover:before,
+        #bbpress-forums li.bbp-body ul.forum .bbp-forum-info:hover:before,
+        #bbpress-forums .bbp-body li.bbp-forum-freshness .bbp-author-name,
+        .bbp-topic-meta .bbp-topic-started-by a,
+        div.bbp-template-notice a.bbp-author-name,
+        #bbpress-forums .bbp-body li.bbp-topic-freshness .bbp-author-name,
+        #bbpress-forums #bbp-user-wrapper h2.entry-title,
+        .bbp-reply-header .bbp-meta a:hover,
+        .member-tax a:hover,
+        #bbpress-forums #subscription-toggle a,
+        .uni-orderbar .dropdown-menu li a:hover,
+        .main-menu.affix .sticky-gototop:hover {
+            color: #dbdbdb;
+        }
+
+        .related-item .price {
+            color: #dbdbdb !important;
+        }
+
+        .main-color-1-bg,
+        .main-color-1-bg-hover:hover,
+        input[type=submit],
+        table:not(.shop_table)>thead,
+        table:not(.shop_table)>tbody>tr:hover>td,
+        table:not(.shop_table)>tbody>tr:hover>th,
+        header .dropdown-menu>li>a:hover,
+        header .dropdown-menu>li>a:focus,
+        header .multi-column>.dropdown-menu li.menu-item:hover,
+        header .multi-column>.dropdown-menu .menu-column li.menu-item:hover,
+        .un-icon:hover,
+        .dark-div .un-icon:hover,
+        .woocommerce-cart .shop_table.cart thead tr,
+        .uni-addtocart .add-text,
+        .event-classic-item .item-thumbnail:hover a:before,
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span,
+        .course-list-table>tbody>tr:hover>td,
+        .course-list-table>tbody>tr:hover>th,
+        .project-item:hover .project-item-excerpt,
+        .navbar-inverse .navbar-nav>li>a:after,
+        .navbar-inverse .navbar-nav>li>a:focus:after,
+        .topnav-sidebar #lang_sel_click ul ul a:hover,
+        div.bbp-submit-wrapper .button,
+        .topnav-sidebar #lang_sel ul ul a:hover {
+            background-color: #dbdbdb;
+        }
+
+        #sidebar .widget_nav_menu #widget-inner ul li a:hover,
+        .main-color-1-border {
+            border-color: #dbdbdb;
+        }
+
+        .btn-primary,
+        .un-button-2,
+        .un-button-2-lg,
+        .woocommerce a.button,
+        .woocommerce button.button,
+        .woocommerce input.button,
+        .woocommerce #respond input#submit,
+        .woocommerce #content input.button,
+        .woocommerce-page a.button,
+        .woocommerce-page button.button,
+        .woocommerce-page input.button,
+        .woocommerce-page #respond input#submit,
+        .woocommerce-page #content input.button,
+        .woocommerce #review_form #respond .form-submit input,
+        .woocommerce-page #review_form #respond .form-submit input,
+        .wpb_wrapper .wpb_accordion .wpb_accordion_wrapper .ui-accordion-header-active,
+        .wpb_wrapper .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:hover,
+        .wpb_wrapper .wpb_toggle:hover,
+        #content .wpb_wrapper h4.wpb_toggle:hover,
+        .wpb_wrapper #content h4.wpb_toggle:hover,
+        .wpb_wrapper .wpb_toggle_title_active,
+        #content .wpb_wrapper h4.wpb_toggle_title_active,
+        .wpb_wrapper #content h4.wpb_toggle_title_active {
+            background-color: #dbdbdb;
+            border-color: #dbdbdb;
+        }
+
+        .woocommerce ul.products li.product .onsale,
+        .woocommerce-page ul.products li.product .onsale,
+        .single-product.woocommerce .images span.onsale,
+        .single-product.woocommerce-page .images span.onsale,
+        #sidebar .widget_nav_menu #widget-inner ul li a:hover,
+        .woocommerce a.button,
+        .woocommerce button.button,
+        .woocommerce input.button,
+        .woocommerce #respond input#submit,
+        .woocommerce #content input.button,
+        .woocommerce-page a.button,
+        .woocommerce-page button.button,
+        .woocommerce-page input.button,
+        .woocommerce-page #respond input#submit,
+        .woocommerce-page #content input.button,
+        .woocommerce #review_form #respond .form-submit input,
+        .woocommerce-page #review_form #respond .form-submit input,
+        .main-menu.affix .navbar-nav>.current-menu-item>a,
+        .main-menu.affix .navbar-nav>.current-menu-item>a:focus,
+        #bbpress-forums li.bbp-header,
+        #bbpress-forums div.bbp-reply-author .bbp-author-role,
+        #bbp-search-form #bbp_search_submit,
+        #bbpress-forums #bbp-single-user-details #bbp-user-navigation li:hover,
+        #main-nav .main-menu.affix .navbar-nav>li:hover>a {
+            background: #dbdbdb;
+        }
+
+
+
+        .thumbnail-overlay {
+            background: rgba(219, 219, 219, 0.8);
+        }
+
+        .event-default-red,
+        .container.cal-event-list .event-btt:hover,
+        #calendar-options .right-options ul li ul li:hover,
+        #calendar-options .right-options ul li ul li:hover a,
+        #stm-list-calendar .panel-group .panel .panel-heading .panel-title a.collapsed:hover {
+            background: #dbdbdb !important;
+        }
+
+        .cal-day-weekend span[data-cal-date],
+        #cal-slide-content a.event-item:hover,
+        .cal-slide-content a.event-item:hover,
+        .container.cal-event-list .owl-controls .owl-prev:hover i:before,
+        .container.cal-event-list .close-button:hover i:before,
+        #calendar-options a:hover,
+        .container.cal-event-list .owl-controls .owl-next:hover i:before,
+        #calendar-options a.active {
+            color: #dbdbdb !important;
+        }
+
+        .container.cal-event-list .owl-controls .owl-prev:hover,
+        .container.cal-event-list .owl-controls .owl-next:hover,
+        .container.cal-event-list .close-button:hover {
+            border-color: #dbdbdb !important;
+        }
+
+        #stm-list-calendar .panel-group .panel .panel-heading .panel-title a.collapsed>.arrow-down {
+            border-top: 0px !important;
+            border-left: 10px solid transparent !important;
+            border-right: 10px solid transparent !important;
+        }
+
+        #stm-list-calendar .panel-group .panel .panel-heading .panel-title a>.arrow-down {
+            border-top: 10px solid #dbdbdb !important;
+        }
+
+        #stm-list-calendar .panel-group .panel .panel-heading .panel-title a {
+            background-color: #dbdbdb !important;
+        }
+
+        .main-color-2,
+        .main-color-2-hover:hover {
+            color: #ffffff;
+        }
+
+        .main-color-2-bg {
+            background-color: #ffffff;
+        }
+
+        footer.main-color-2-bg,
+        .un-separator .main-color-2-bg,
+        .main-color-2-bg.back-to-top {
+            background-color: #75ab4a;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1,
+        .h1,
+        .minion,
+        .content-dropcap p:first-child:first-letter,
+        .dropcap,
+        #your-profile h3,
+        #learndash_delete_user_data h2 {
+            font-family: "Bitter", Times, serif;
+        }
+
+        .cube1,
+        .cube2 {
+            background: #2d5e17;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6 {
+            letter-spacing: 0;
+            font-family: "Bitter", Times, serif;
+            color: #2d5e17;
+        }
+
+        iframe[name='google_conversion_frame'] {
+            display: none;
+        }
+
+        #main-nav.nav-style-1 .navbar-nav>li>a>.fa {
+            display: none;
+        }
+
+        .item-thumbnail-video-inner iframe {
+            height: 100%;
+        }
+
+        .cactus-rev-slider-default .tparrows:hover {
+            background: none !important;
+        }
+
+        #main-nav .navbar-nav>li>a {
+            color: #080808;
+        }
+
+        page-heading .breadcrumbs {
+            display: none;
+        }
+    </style>
+
+    <!-- end custom css -->
+    <style type="text/css" id="wp-custom-css">
+        /*"Top nav link color"*/
+        .navbar-inverse .navbar-nav>li>a {
+            color: rgba(0, 0, 0, 0.75);
+        }
+
+        /*"Main nav link color"*/
+        #main-nav .navbar-nav>li>a {
+            color: #000;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /*"Button size"*/
+        .vc_btn3.vc_btn3-size-lg {
+            font-size: 24px;
+            padding: 40px 44px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px black;
+        }
+
+        /*HR line with title*/
+        .vc_separator h4 {
+            font-size: 28PX;
+            text-shadow: 3px 3px #e7e7e7;
+            font-family: "Bitter", Times, serif;
+        }
+
+        /*HR line*/
+        .vc_separator.vc_sep_color_grey .vc_sep_line {
+            border-color: #81b954;
+        }
+
+        /*breadcrumb*/
+        .page-heading {
+            background: #75ab4a;
+            color: #fff;
+        }
+
+
+        /*main header font all pages*/
+        h4 {
+            font-family: "Bitter", Times, serif;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #81b954;
+            /*text-shadow: 2px 2px #e7e7e7;*/
+            letter-spacing: 0.02em;
+            /*font-size: 20px;*/
+        }
+
+        /*icons, hr headers*/
+        .vc_icon_element.vc_icon_element-outer .vc_icon_element-inner.vc_icon_element-color-blue .vc_icon_element-icon {
+            color: #81b954;
+        }
+
+        /*advisor icons*/
+        button:hover,
+        input[type=button]:hover,
+        input[type=submit]:hover,
+        .btn-default:hover,
+        .btn-default:focus,
+        .btn-default:active,
+        .btn-default.active,
+        .open .dropdown-toggle.btn-default,
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active,
+        .btn-primary.active,
+        .open .dropdown-toggle.btn-primary,
+        .un-button-1:hover,
+        .un-button-2:hover,
+        .un-button-1-lg:hover,
+        .un-button-2-lg:hover {
+            color: #fff;
+            background-color: #81b954;
+            border-color: #000;
+        }
+
+        /*request button sidebar*/
+        .requestbutton {
+            background-color: #73ac44;
+            border: 0px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0px;
+            display: inline-block;
+            font-size: 17px;
+            border: 0px solid;
+            border-radius: 10px;
+            margin-bottom: 80px;
+            margin-top: 20px;
+            font-family: "Bitter", Times, serif;
+            text-shadow: 1px 3px black;
+        }
+
+        .requestbutton:hover {
+            background: #92cd60;
+        }
+
+        .requestbutton {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+
+        /*search bar*/
+        .advisorsearch {
+            width: 300px;
+        }
+
+        /*search title*/
+        .widgettitle {
+            font-size: 15px;
+        }
+
+        header .dropdown-menu {
+            text-transform: uppercase;
+        }
+
+        /*top nav*/
+        .topnav-sidebar a {
+            display: inline-block;
+            padding: 0 15px;
+            border-left: solid 1px rgba(0, 0, 0, 0.15);
+            border-right: solid 1px rgba(0, 0, 0, 0.15);
+        }
+
+        .dark-div,
+        .dark-div a {
+            color: #000;
+        }
+
+        /*nav*/
+        #main-nav .navbar-nav>li>a {
+            /*padding-top: 30px;
+            padding-bottom: 30px;*/
+            padding-right: 59px;
+        }
+
+        /*new biz, existing biz,*/
+        element.style {}
+
+
+        a {
+            color: #ffffff;
+            transition: color .2s;
+        }
+
+
+        /*font awesome icons, main page*/
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-size: 50px;
+        }
+
+        /*nav menu text color on mobile*/
+        .dark-div,
+        .dark-div a {
+            color: #ffffff !important;
+        }
+
+        /*top nav height, disappears*/
+        #top-nav .navbar.navbar-inverse {
+            min-height: 0px;
+        }
+
+        /*member text*/
+        .member-item .item-content p {
+            font-size: 12px;
+        }
+    </style>
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body
+    class="page-template-default page page-id-2877 full-width custom-background-empty wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+    <a name="top" style="height: 0; position: absolute; top: 0;" id="top-anchor"></a>
+    <div id="body-wrap">
+        <div id="wrap">
+            <header>
+                <%-- <div id="top-nav" class="dark-div nav-style-1">
+                    <nav class="navbar navbar-inverse main-color-1-bg" role="navigation">
+                        <div class="container">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="top-menu">
+                                <ul class="nav navbar-nav hidden-xs"></ul>
+                                <button type="button" class="mobile-menu-toggle visible-xs">
+                                    <span class="sr-only">Menu</span>
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <div class="navbar-right topnav-sidebar">
+                                </div>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                    </nav>
+        </div>--%>
+        <!--/top-nap-->
+        <div id="main-nav" class="nav-style-1">
+            <nav class="navbar navbar-inverse main-color-2-bg" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="logo" href="http://vtsbdc.org" title="Vermont Small Business Development Center">
+                            <img src="images/Vt_SBDC_Logo_Color.jpg" width="225"
+                                alt="Vermont Small Business Development Center" /></a>
+
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="nav-menu-item-2888"
+                                class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent dropdown">
+                                <a href="http://www.vtsbdc.org/about-vt-sbdc"
+                                    class="menu-link dropdown-toggle disabled main-menu-link"
+                                    data-toggle="dropdown">About VTSBDC </a>
+                                <%-- <ul class="dropdown-menu menu-depth-1">
+                            <li id="nav-menu-item-2964"
+                                class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="http://vtsbdc.org/success-stories/" class="menu-link  sub-menu-link">Success
+                                    Stories </a></li>
+                            <li id="nav-menu-item-3210"
+                                class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom">
+                                <a href="http://vtsbdc.org/category/news-events/" class="menu-link  sub-menu-link">News
+                                    &#038; Events </a></li>
+                            <li id="nav-menu-item-3502"
+                                class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="http://vtsbdc.org/about-vt-sbdc/staff-directory/"
+                                    class="menu-link  sub-menu-link">Staff Directory </a></li>
+                            <li id="nav-menu-item-3388"
+                                class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent dropdown-submenu">
+                                <a href="http://vtsbdc.org/about-vt-sbdc/staff-directory/advisor-board/coordinating-council/"
+                                    class="menu-link  sub-menu-link">Governance </a>
+                                <ul class="dropdown-menu menu-depth-2">
+                                    <li id="nav-menu-item-3381"
+                                        class="sub-menu-item menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="http://vtsbdc.org/about-vt-sbdc/staff-directory/advisor-board/"
+                                            class="menu-link  sub-menu-link">Advisory Board </a></li>
+                                </ul>
+                            </li>
+                        </ul>--%>
+                        </li>
+                        <li id="nav-menu-item-2889"
+                            class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent dropdown">
+                            <a href="http://www.vtsbdc.org/advising/"
+                                class="menu-link dropdown-toggle disabled main-menu-link"
+                                data-toggle="dropdown">Advising </a>
+                            <%-- <ul class="dropdown-menu menu-depth-1">
+                        <li id="nav-menu-item-3086"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/new-business/" class="menu-link  sub-menu-link">New Business </a>
+                        </li>
+                        <li id="nav-menu-item-3085"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/existing-business/" class="menu-link  sub-menu-link">Existing
+                                Business </a></li>
+                        <li id="nav-menu-item-3087"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/needs-assessment/" class="menu-link  sub-menu-link">Needs
+                                Assessment </a></li>
+                        </ul>--%>
+                        </li>
+                        <li id="nav-menu-item-2887"
+                            class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2877 current_page_item">
+                            <a href="Events.aspx?days=90" class="menu-link  main-menu-link">Training &#038; Workshops
+                            </a></li>
+                        <li id="nav-menu-item-2948"
+                            class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent dropdown">
+                            <a href="http://www.vtsbdc.org/resources/"
+                                class="menu-link dropdown-toggle disabled main-menu-link"
+                                data-toggle="dropdown">Resources </a>
+                            <%-- <ul class="dropdown-menu menu-depth-1">
+                        <li id="nav-menu-item-3336"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/general/" class="menu-link  sub-menu-link">Cyber Security </a>
+                        </li>
+                        <li id="nav-menu-item-3335"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/industry-specific/" class="menu-link  sub-menu-link">Industry
+                                Specific </a></li>
+                        <li id="nav-menu-item-3334"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/disaster-recovery/" class="menu-link  sub-menu-link">Disaster
+                                Recovery </a></li>
+                        <li id="nav-menu-item-3333"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/export-import/" class="menu-link  sub-menu-link">Export / Import
+                            </a></li>
+                        <li id="nav-menu-item-3332"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/cyber-security-and-veterans/"
+                                class="menu-link  sub-menu-link">Veterans </a></li>
+                        <li id="nav-menu-item-3272"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://vtsbdc.org/contact/" class="menu-link  sub-menu-link">Contact </a></li>
+                        </ul>--%>
+                        </li>
+                        <li id="nav-menu-item-2947"
+                            class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent dropdown">
+                            <a href="http://www.vtsbdc.org/specialty-services/"
+                                class="menu-link dropdown-toggle disabled main-menu-link"
+                                data-toggle="dropdown">Specialty Services</a>
+                            <%-- <ul class="dropdown-menu menu-depth-1">
+                        <li id="nav-menu-item-3342"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://www.vtsbdc.org/specialty-services/youth-entrepreneurship/"
+                                class="menu-link  sub-menu-link">Youth Entrepreneurship </a></li>
+                        <li id="nav-menu-item-3345"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://www.vtsbdc.org/specialty-services/technology-commercialization/"
+                                class="menu-link  sub-menu-link">Technology Commercialization </a></li>
+                        <li id="nav-menu-item-3348"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://www.vtsbdc.org/specialty-services/government-contracting/"
+                                class="menu-link  sub-menu-link">Government Contracting </a></li>
+                        <li id="nav-menu-item-3351"
+                            class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="http://www.vtsbdc.org/specialty-services/digital-marketing-e-commerce/"
+                                class="menu-link  sub-menu-link">Digital Marketing, e-Commerce </a></li>
+                        </ul>--%>
+                        </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </div>
+        <!-- #main-nav -->
+        </header>
+        <div class="page-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="pathway col-md-4 col-sm-4 hidden-xs text-right">
+
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+            <!--/container-->
+        </div>
+        <!--/page-heading-->
+        <div class="top-sidebar">
+            <div class="container">
+                <div class="row">
+                </div>
+                <!--/row-->
+            </div>
+            <!--/container-->
+        </div>
+        <!--/Top sidebar-->
+        <div id="body">
+            <div class="container">
+                <div class="content-pad-3x">
+                    <div class="row">
+                        <div id="content" class="col-12" role="main">
+                            <article class="single-page-content">
+
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </article>
+                        </div>
+                        <!--/content-->
+
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/content-pad-3x-->
+            </div>
+            <!--/container-->
+        </div>
+        <!--/body-->
+
+        <footer class="dark-div main-color-2-bg">
+            <section id="bottom">
+                <div class="section-inner">
+                    <div class="container">
+                        <div class="row normal-sidebar">
+                            <div id="text-2" class="col-md-2 widget widget_text">
+                                <div class=" widget-inner">
+                                    <div class="textwidget">
+                                        <img src="images/footer-logo.png" style="width: 140px; height: 59px;"><br>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/sbafinal.png" height="85">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="text-4" class="col-md-7 widget widget_text">
+                                <div class=" widget-inner">
+                                    <div class="textwidget">
+                                        <p><a href="http://www.vtsbdc.org/needs-assessment/">Needs Assessment</a> • <a
+                                                href="http://www.vtsbdc.org/about-vt-sbdc">About VTSBDC</a> • <a
+                                                href="http://www.vtsbdc.org/resources/">Resources</a> • <a
+                                                href="http://www.vtsbdc.org/Advising">Advising</a> • <a
+                                                href="Events.aspx?days=90">Training &amp; Workshops</a> • <a
+                                                href="http://www.vtsbdc.org/specialty-services/">Specialty Services</a>
+                                            • <a href="http://www.vtsbdc.org/contact/">Contact</a></p>
+                                        <hr />
+                                        <p>
+                                            1540 Vermont Route 66<br />
+                                            Randolph, Vermont 05060<br />
+                                            Tel: (802) 728-9101 or in VT (800) 464-SBDC<br />
+                                            Fax: (802)728-3026
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="bottom-nav">
+                <div class="container">
+                    <div class="text-center line-under">
+                    </div>
+                    <div class="row footer-content">
+                        <div class="copyright col-md-6">
+                            © 2008–21 Vermont Small Business Development Center. All rights reserved.
+                        </div>
+                        <nav class="col-md-6 footer-social">
+                            <ul class="list-inline pull-right social-list">
+                                <li><a href="#" class="btn btn-default social-icon"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#" class="btn btn-default social-icon"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="#" class="btn btn-default social-icon"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a href="#" class="btn btn-default social-icon"><i
+                                            class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/container-->
+            </div>
+        </footer>
+    </div>
+    <!--wrap-->
+    </div>
+    <!--/body-wrap-->
+    <div class="mobile-menu-wrap dark-div visible-xs">
+        <a href="#" class="mobile-menu-toggle"><i class="fa fa-times-circle"></i></a>
+        <ul class="mobile-menu">
+            <li id="menu-item-2888"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-2888">
+                <a href="http://www.vtsbdc.org/about-vt-sbdc/">About VTSBDC</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-2964"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2964"><a
+                            href="http://vtsbdc.org/success-stories/">Success Stories</a></li>
+                    <li id="menu-item-3210"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3210"><a
+                            href="http://vtsbdc.org/category/news-events/">News &#038; Events</a></li>
+                    <li id="menu-item-3502"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3502"><a
+                            href="http://vtsbdc.org/about-vt-sbdc/staff-directory/">Staff Directory</a></li>
+                    <li id="menu-item-3388"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-3388">
+                        <a
+                            href="http://vtsbdc.org/about-vt-sbdc/staff-directory/advisor-board/coordinating-council/">Governance</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-3381"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3381"><a
+                                    href="http://vtsbdc.org/about-vt-sbdc/staff-directory/advisor-board/">Advisory
+                                    Board</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li id="menu-item-2889"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-2889">
+                <a href="http://www.vtsbdc.org/advising/">Advising</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-3086"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3086"><a
+                            href="http://vtsbdc.org/new-business/">New Business</a></li>
+                    <li id="menu-item-3085"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3085"><a
+                            href="http://vtsbdc.org/existing-business/">Existing Business</a></li>
+                    <li id="menu-item-3087"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3087"><a
+                            href="http://vtsbdc.org/needs-assessment/">Needs Assessment</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-2887"
+                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2877 current_page_item menu-item-2887">
+                <a href="Events.aspx?days=90">Training &#038; Workshops</a></li>
+            <li id="menu-item-2948"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-2948">
+                <a href="http://www.vtsbdc.org/resources">Resources</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-3336"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3336"><a
+                            href="http://vtsbdc.org/general/">Cyber Security</a></li>
+                    <li id="menu-item-3335"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3335"><a
+                            href="http://vtsbdc.org/industry-specific/">Industry Specific</a></li>
+                    <li id="menu-item-3334"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3334"><a
+                            href="http://vtsbdc.org/disaster-recovery/">Disaster Recovery</a></li>
+                    <li id="menu-item-3333"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3333"><a
+                            href="http://vtsbdc.org/export-import/">Export / Import</a></li>
+                    <li id="menu-item-3332"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3332"><a
+                            href="http://vtsbdc.org/cyber-security-and-veterans/">Veterans</a></li>
+                    <li id="menu-item-3272"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3272"><a
+                            href="http://vtsbdc.org/contact/">Contact</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-2947"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-2947">
+                <a href="http://www.vtsbdc.org/specialty-services/">Specialty Services</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-3342"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3342"><a
+                            href="http://www.vtsbdc.org/specialty-services/youth-entrepreneurship/">Youth
+                            Entrepreneurship</a></li>
+                    <li id="menu-item-3345"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3345"><a
+                            href="http://www.vtsbdc.org/specialty-services/technology-commercialization/">Technology
+                            Commercialization</a></li>
+                    <li id="menu-item-3348"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3348"><a
+                            href="http://www.vtsbdc.org/specialty-services/government-contracting/">Government
+                            Contracting</a></li>
+                    <li id="menu-item-3351"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3351"><a
+                            href="http://www.vtsbdc.org/specialty-services/digital-marketing-e-commerce/">Digital
+                            Marketing, e-Commerce</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

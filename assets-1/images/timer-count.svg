@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168.324" height="167.658" viewBox="0 0 168.324 167.658">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_2197" data-name="Path 2197" d="M-17178.648,433.224l63.193,55.493h21.834V484.53l-32.916-64-52.461-8.34Z" transform="translate(17179 -416.751)" fill="#fff"/>
+    </clipPath>
+    <filter id="Ellipse_327" x="0" y="1.769" width="165.888" height="165.888" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.6"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_11040" data-name="Group 11040" transform="translate(-195.906 -183.623)">
+    <g id="Ellipse_328" data-name="Ellipse 328" transform="translate(204 193.485)" fill="none" stroke="rgba(255,72,96,0.7)" stroke-width="3">
+      <circle cx="74.851" cy="74.851" r="74.851" stroke="none"/>
+      <circle cx="74.851" cy="74.851" r="73.351" fill="none"/>
+    </g>
+    <g id="Mask_Group_37" data-name="Mask Group 37" transform="translate(278.852 188.187)" clip-path="url(#clip-path)">
+      <path id="Path_2198" data-name="Path 2198" d="M80.57,0A80.57,80.57,0,1,1,0,80.57,80.57,80.57,0,0,1,80.57,0Z" transform="translate(-80.57 -0.421)" fill="#ff4860"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 195.91, 183.62)" filter="url(#Ellipse_327)">
+      <circle id="Ellipse_327-2" data-name="Ellipse 327" cx="64.944" cy="64.944" r="64.944" transform="translate(18 19.77)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
